@@ -9,6 +9,7 @@ end
 
 vim.g.mapleader = " "
 vim.keymap.set('n', '<leader>ff', with_opts(builtin.find_files, {hidden = true}), {})
+vim.keymap.set('n', '<leader>fb', builtin.git_branches, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>ex', vim.cmd.Lexplore)
 
