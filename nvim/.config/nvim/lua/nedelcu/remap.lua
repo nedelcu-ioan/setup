@@ -12,6 +12,8 @@ vim.keymap.set('n', '<leader>ff', with_opts(builtin.find_files, {hidden = true})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>ex', vim.cmd.Lexplore)
 
+
+vim.keymap.set('n', "<leader>w", [[<C-w>]])
 -- Open a terminal in vertical split
 vim.keymap.set('n', '<leader>tt', ':vnew term://bash<CR>')
 vim.keymap.set('n', '<leader>te', ':edit term://bash<CR>') 
