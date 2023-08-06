@@ -17,4 +17,4 @@ vim.keymap.set('n', "<leader>w", [[<C-w>]])
 -- Open a terminal in vertical split
 vim.keymap.set('n', '<leader>tt', ':vnew term://bash<CR>')
 vim.keymap.set('n', '<leader>te', ':edit term://bash<CR>') 
-vim.keymap.set("t", "<leader>w", [[<C-\><C-n><C-w>]], termopts)
+vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], termopts)
