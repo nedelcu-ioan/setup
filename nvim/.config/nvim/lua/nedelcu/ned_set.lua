@@ -4,6 +4,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.relativenumber = true
 
+-- Netrw config 
 vim.g.netrw_winsize = 15
 vim.g.netrw_hide = 0
 vim.g.netrw_sort_sequence = [[[\/]$,*]]
