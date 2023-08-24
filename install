@@ -1,2 +1,8 @@
-#!/usr/bin/bash 
-stow nvim 
+#!/usr/bin/bash
+
+# neovim setup
+stow nvim
+
+# screen settings 
+cp ./screen/.screenrc ~/.screenrc
+

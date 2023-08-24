@@ -1,0 +1,5 @@
+autodetach on 
+startup_message off 
+hardstatus alwayslastline 
+shelltitle 'bash'
+hardstatus string "%{= g} %{= w}%-Lw%{=r}%n%f* %t%{-}%+LW"
