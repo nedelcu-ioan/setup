@@ -5,4 +5,7 @@ stow nvim
 
 # screen settings 
 cp ./screen/.screenrc ~/.screenrc
+cp ./tmux/.tmux.conf ~/.tmux.conf
 
+# scripts 
+cp ./scripts/* /usr/bin/
