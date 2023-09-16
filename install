@@ -9,3 +9,4 @@ cp ./tmux/.tmux.conf ~/.tmux.conf
 
 # scripts 
 cp ./scripts/* /usr/bin/
+

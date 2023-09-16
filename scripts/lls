@@ -1,2 +1,11 @@
 #!/usr/bin/env bash 
+
+case "$1" in 
+    -s)
+        find .
+        exit 
+    ;;
+esac 
+
 exec tree -a -I .git* | vim -R - 
+

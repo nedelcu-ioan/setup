@@ -1,13 +1,19 @@
-# i3
+```
+i3
+----
 master - Alt
 
-# tmux 
+tmux 
+----
 master         - C-a
 vertical split - C-a \
 
-# nvim 
+nvim 
+----
 
-# scripts
+scripts
+----
 
-# aliases 
-
+aliases 
+----
+```

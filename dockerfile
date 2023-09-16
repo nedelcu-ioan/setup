@@ -2,14 +2,12 @@ FROM ubuntu:20.04
 
 WORKDIR /install
 
-RUN apt-get update -y 
-RUN apt-get upgrade -y 
+COPY install-deps install-deps 
+RUN ./install-deps
 
-RUN apt-get install -y \
-    stow \
-    tmux \
-    screen \
-    fzf 
+RUN useradd ned -m
+
+WORKDIR /home/ned/setup-master
 
 COPY install install 
 COPY nvim nvim
@@ -17,7 +15,6 @@ COPY screen screen
 COPY scripts scripts
 COPY tmux tmux
 
-
+RUN mkdir /home/ned/.config
 RUN ./install
 
-CMD ["sleep", "infinity"]

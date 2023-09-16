@@ -1,17 +1,18 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    -- Plugib manager
+    -- plugin manager
     use 'wbthomason/packer.nvim'
 
-    -- fuzzy finder 
+    -- fuzzy finder for files 
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.2',
-        -- or                            , branch = '0.1.x',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        'nvim-telescope/telescope.nvim', tag = '0.1.2', requires = { {'nvim-lua/plenary.nvim'} }
     }
-
-    -- lsp
+    
+    -- indent fisualizer 
+    use "lukas-reineke/indent-blankline.nvim"
+    
+    -- language server (lsp)
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -38,10 +39,5 @@ return require('packer').startup(function(use)
     -- practice 
     use {
         "ThePrimeagen/vim-be-good"
-    }
-
-    -- syntax highlighting
-    use {
-        'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}
     }
 end)
