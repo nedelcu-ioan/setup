@@ -9,5 +9,6 @@ apt-get install -y \
     fzf \
     git \
     tree \
-    vim 
+    vim \
+    feh 
 
