@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-exec docker run -it ned-setup bash 
-

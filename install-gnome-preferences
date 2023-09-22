@@ -1,0 +1,4 @@
+#!/usr/bin/env bash 
+
+set -ex 
+dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf

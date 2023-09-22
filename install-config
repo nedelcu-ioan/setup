@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+
+# neovim setup
+stow nvim
+
+# screen settings 
+cp ./screen/.screenrc ~/.screenrc
+cp ./tmux/.tmux.conf ~/.tmux.conf
+
+# scripts 
+cp ./scripts/* /usr/bin/
+
+# fonts 
+mkdir ~/.fonts
+cp ./fonts/* ~/.fonts
+
+export OSH="$HOME/setup-master/oh-my-bash"; bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"

@@ -1,4 +1,0 @@
-#!/usr/bin/env bash 
-
-docker build -t ned-setup:latest --no-cache .
-
